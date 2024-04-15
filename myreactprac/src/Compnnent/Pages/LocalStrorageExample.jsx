@@ -42,11 +42,11 @@ const LocalStorageExample = () => {
     clear();
   };
   return (
-    <p>
+    <div>
       <input onChange={handleChange} value={name} />
       <h1>{name}</h1>
       <button onClick={handleClearData}>Clear localStorage data</button>
-    </p>
+    </div>
   );
 };
 export default LocalStorageExample;

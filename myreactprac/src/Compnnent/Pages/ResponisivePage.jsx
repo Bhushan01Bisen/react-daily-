@@ -16,7 +16,7 @@ export const ResponisivePage = () => {
   }, []);
   return (
     <div>
-      {isMobile ? <h1>It's a Mobile view</h1> : <h1>It's not a Mobile view</h1>}
+      {isMobile ? <h1>A Mobile view</h1> : <h1> Not a Mobile view</h1>}
       <h1 style={{color : isMobile?'red':'blue'}}>React is come an End </h1>
     </div>
   );
