@@ -3,5 +3,5 @@
     height: 100vh;
     background-image: linear-gradient(black,transparent),url(Home.jpg);
     background-size: cover;
-    background-color: center;
+    /* background-color: center; */
 }

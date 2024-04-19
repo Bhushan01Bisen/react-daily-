@@ -7,10 +7,12 @@ import { Suspense, lazy } from "react";
 // import { EntryPage } from "../EntryPage/EntryPage";
 import { WithoutRedux } from "../WiithoutRedux/WithoutRedux";
 import { ResponisivePage } from "../Pages/ResponisivePage";
-   // import { SessionStororageExAdd } from "../Pages/SessionStororageExAdd";
+import AboutUs from "../AboutUs/Aboutus";  //for Contextapi otherwise we use lazy Loading
+import ForwardRef1 from "../ForwardREf/ForwardRef1";
+// import { SessionStororageExAdd } from "../Pages/SessionStororageExAdd";
 // import { LocalStrorageExample } from "../Pages/LocalStrorageExample";
 const Home = lazy(() => import("../Home/Home")); //lazy loding is hapning takes callback as a refrence
-const Aboutus = lazy(() => import("../AboutUs/Aboutus"));
+const Aboutus = lazy(() => import("../AboutUs/Aboutus"));  
 const LocalStrorageExample = lazy(() =>
   import("../Pages/LocalStrorageExample")
 );
@@ -48,6 +50,10 @@ export const Menu = () => {
       href: "/Responsive",
       content: "Responsive",
     },
+    {
+      href: "/forwardRef",
+      content: "Forward Refccccc",
+    }
     
   ];
   const rouyterData = [
@@ -57,7 +63,10 @@ export const Menu = () => {
     },
     {
       path: "/about",
-      element: <Aboutus />,
+      element:(
+        <AboutUs name="pune"><h1>Kolkata</h1></AboutUs>
+      )
+      
     },
     {
       path: "/localStorage",
@@ -80,6 +89,10 @@ export const Menu = () => {
     {
       path: "/Responsive",
       element: <ResponisivePage/>,
+    },
+    {
+      path:  "/forwardRef",
+      element: <ForwardRef1/>,
     },
   ];
   return (
