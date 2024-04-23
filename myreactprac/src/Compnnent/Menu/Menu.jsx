@@ -9,7 +9,11 @@ import { WithoutRedux } from "../WiithoutRedux/WithoutRedux";
 import { ResponisivePage } from "../Pages/ResponisivePage";
 import AboutUs from "../AboutUs/Aboutus";  //for Contextapi otherwise we use lazy Loading
 import ForwardRef1 from "../ForwardREf/ForwardRef1";
-// import { SessionStororageExAdd } from "../Pages/SessionStororageExAdd";
+import { WithoutRedux2 } from "../WithoutRedux2/WithoutRedux2";
+// import { CounterWithRedux } from "../Counter/CounterWithRedux";
+import { ParentRedux } from "../WithRedux/ParentRedux";
+// import { CounterWithRedux } from "../Counter/CounterWithRedux";
+ // import { SessionStororageExAdd } from "../Pages/SessionStororageExAdd";
 // import { LocalStrorageExample } from "../Pages/LocalStrorageExample";
 const Home = lazy(() => import("../Home/Home")); //lazy loding is hapning takes callback as a refrence
 const Aboutus = lazy(() => import("../AboutUs/Aboutus"));  
@@ -53,7 +57,17 @@ export const Menu = () => {
     {
       href: "/forwardRef",
       content: "Forward Refccccc",
-    }
+    },
+    {
+      href: "/withoutRedux2",
+      content: "WithoutRedux2",
+    },
+    {
+
+      href:'/withRedux',
+      content:'Redux'
+    },
+   
     
   ];
   const rouyterData = [
@@ -94,6 +108,19 @@ export const Menu = () => {
       path:  "/forwardRef",
       element: <ForwardRef1/>,
     },
+    {
+      path: "/withoutRedux",
+      element: <WithoutRedux />,
+    },
+    {
+      path: "/withoutRedux2",
+      element: <WithoutRedux2 />,
+    },
+     {
+      path:"/withRedux",
+      // element:<CounterWithRedux/>
+      element:<ParentRedux/>
+     },
   ];
   return (
     <main>
