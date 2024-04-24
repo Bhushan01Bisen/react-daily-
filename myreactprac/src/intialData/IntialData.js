@@ -1,7 +1,8 @@
  
 
  export const intaialCounter ={
-   count:0
+   count:0,
+   myCount:0
 }
 //you can have diffrent code with intaial data 
 
@@ -10,4 +11,8 @@
 export const intaialRedux={
   name:'',
   loc:''
+}
+
+export const intatialLiist={
+  list:[],
 }

@@ -10,9 +10,12 @@ import { ResponisivePage } from "../Pages/ResponisivePage";
 import AboutUs from "../AboutUs/Aboutus";  //for Contextapi otherwise we use lazy Loading
 import ForwardRef1 from "../ForwardREf/ForwardRef1";
 import { WithoutRedux2 } from "../WithoutRedux2/WithoutRedux2";
+import { ParentRedux } from "../WithRedux/NameLocUpdate/ParentRedux";
+import { AddList } from "../WithRedux/AddList/AddList";
+import { MyRedx } from "../WithRedux/MyRedx";
+import { Counter } from "../WithRedux/Counter/Counter";
 // import { CounterWithRedux } from "../Counter/CounterWithRedux";
-import { ParentRedux } from "../WithRedux/ParentRedux";
-// import { CounterWithRedux } from "../Counter/CounterWithRedux";
+ // import { CounterWithRedux } from "../Counter/CounterWithRedux";
  // import { SessionStororageExAdd } from "../Pages/SessionStororageExAdd";
 // import { LocalStrorageExample } from "../Pages/LocalStrorageExample";
 const Home = lazy(() => import("../Home/Home")); //lazy loding is hapning takes callback as a refrence
@@ -114,12 +117,14 @@ export const Menu = () => {
     },
     {
       path: "/withoutRedux2",
-      element: <WithoutRedux2 />,
+      element: <MyRedx />,
+      // element: < WithoutRedux2/>,
     },
      {
       path:"/withRedux",
       // element:<CounterWithRedux/>
-      element:<ParentRedux/>
+      // element:<AddList/>
+      element:<Counter/>
      },
   ];
   return (
