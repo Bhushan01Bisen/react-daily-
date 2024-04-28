@@ -14,6 +14,8 @@ import { ParentRedux } from "../WithRedux/NameLocUpdate/ParentRedux";
 import { AddList } from "../WithRedux/AddList/AddList";
 import { MyRedx } from "../WithRedux/MyRedx";
 import { Counter } from "../WithRedux/Counter/Counter";
+import { GetPosts } from "../WithRedux/Ajax/GetPosts";
+import { GetComments } from "../WithRedux/Ajax/GetComments";
 // import { CounterWithRedux } from "../Counter/CounterWithRedux";
  // import { CounterWithRedux } from "../Counter/CounterWithRedux";
  // import { SessionStororageExAdd } from "../Pages/SessionStororageExAdd";
@@ -124,7 +126,9 @@ export const Menu = () => {
       path:"/withRedux",
       // element:<CounterWithRedux/>
       // element:<AddList/>
-      element:<Counter/>
+      // element:<Counter/>
+      // element:<GetPosts/>
+      element:<GetComments/>
      },
   ];
   return (

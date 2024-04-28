@@ -16,3 +16,8 @@ export const intaialRedux={
 export const intatialLiist={
   list:[],
 }
+
+export const intatialAjax={
+  posts:[],
+  comments:[],
+}
