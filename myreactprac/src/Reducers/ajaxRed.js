@@ -14,6 +14,12 @@ const ajaxRed = (state = intatialAjax, action) => {
         ...state,
         comments: action.payload,
       };
+    case "USERS":
+      // console.log(action.payload, "action.payload")
+      return {
+        ...state,
+        users: action.payload,
+      };
     default:
       return state;
   }

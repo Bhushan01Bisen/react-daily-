@@ -20,4 +20,5 @@ export const intatialLiist={
 export const intatialAjax={
   posts:[],
   comments:[],
+  users:[],
 }

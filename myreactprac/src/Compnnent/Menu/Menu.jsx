@@ -16,6 +16,7 @@ import { MyRedx } from "../WithRedux/MyRedx";
 import { Counter } from "../WithRedux/Counter/Counter";
 import { GetPosts } from "../WithRedux/Ajax/GetPosts";
 import { GetComments } from "../WithRedux/Ajax/GetComments";
+import { GetUser } from "../WithRedux/Ajax/GetUser";
 // import { CounterWithRedux } from "../Counter/CounterWithRedux";
  // import { CounterWithRedux } from "../Counter/CounterWithRedux";
  // import { SessionStororageExAdd } from "../Pages/SessionStororageExAdd";
@@ -128,7 +129,8 @@ export const Menu = () => {
       // element:<AddList/>
       // element:<Counter/>
       // element:<GetPosts/>
-      element:<GetComments/>
+      // element:<GetComments/>
+      element:<GetUser/>
      },
   ];
   return (
