@@ -1,5 +1,7 @@
 import { GetComments } from "./Component/Ajax/GetComment";
+import { GetDataFromStrore } from "./Component/Ajax/GetDataFromStrore";
 import { GetPost } from "./Component/Ajax/GetPost";
+import { GetUser } from "./Component/Ajax/GetUser";
 import { ParentNamLoc } from "./Component/ParentNamLoc";
 
   
@@ -7,8 +9,10 @@ import { ParentNamLoc } from "./Component/ParentNamLoc";
    return (
      <div>
       {/* <ParentNamLoc/> */}
-       {/* <GetComments/> */}
+       {/* <GetComments/>
        <GetPost/>
+       <GetDataFromStrore/> */}
+       <GetUser/>
      </div>
    )
  }
